@@ -111,17 +111,57 @@ a img {
 :focus {
   outline: 0;
 }
+body {
+  font-family: 'PT Sans Narrow', sans-serif;
+  box-sizing: border-box;
+  background: #8a3232;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
 .banner {
   display: flex;
   justify-content: space-between;
+  font-family: 'Paytone One', sans-serif;
   align-items: center;
   height: 48px;
+  padding: 18px;
+  margin: 0 auto;
+  max-width: 1080px;
+  background: #8a3232;
 }
 .banner .logo {
   display: flex;
   align-items: center;
+  text-transform: uppercase;
 }
 .banner .logo img {
   height: 48px;
   width: 48px;
+}
+.banner .logo .logo-name {
+  margin-left: 8px;
+  color: white;
+}
+.banner .logo .logo-name:hover {
+  color: #bfbfbf;
+}
+.banner .menu {
+  display: block;
+  float: right;
+}
+.banner .menu .menu-item {
+  text-transform: uppercase;
+  width: auto;
+  display: inline-block;
+  max-width: 100%;
+  padding: 4px 6px;
+  color: white;
+}
+.banner .menu .menu-item:hover {
+  color: #bfbfbf;
 }

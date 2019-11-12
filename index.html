@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <script src="https://kit.fontawesome.com/0f1411981d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" type="image/x-icon" sizes="32x32" href="favicon.png"/>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Paytone+One&display=swap" rel="stylesheet">
     <title>Adrian Parra</title>
 </head>
 <body>
     <header class="banner">
         <div class="logo">
             <img src="favicon.png" alt="My face">
-            <a href="index.html">Adrian Parra</a>
+            <a href="index.html" class="logo-name">Adrian Parra</a>
         </div>
-        <nav>
-            <a href="/aboutme.html">About Me</a>
-            <a href="/projects.html">Projects</a>
-            <a href="/contact.html">Contact Info</a>
+        <nav class="menu">
+            <a href="/aboutme.html" class="menu-item">About Me</a>
+            <a href="/#portfolio"  class="menu-item">Projects</a>
+            <a href="/contact.html" class="menu-item">Contact Info</a>
         </nav>
     </header>
 
@@ -27,10 +29,47 @@
             <h1>Full Stack Web Developer</h1>
             <h3>In the making</h3>
             <p>Creating websites that keep people coming back.</p>
+
+            <a href="/#portfolio">View Projects</a>
+            <i class="fas fa-caret-down"></i>
+            <i class="fas fa-caret-square-down"></i>
         </div>
 
-        <div class="projects">
-            
+        <div class="portfolio" id="portfolio">
+            <ul class="projects">
+
+                <li>
+                    <a href="/portfolio/noisecontroller.html">
+                        <img src="assets/projects/NoiseController-large.jpg" alt="Noise Controller">
+                    </a>
+                    <h3>HTML, CSS, LESS</h3>
+                </li>
+
+                <li>
+                    <a href="/portfolio/lamdatimes.html">
+                        <img src="/assets/projects/LamdaTimes_large.jpg" alt="Lambda Times Project">
+                    </a>
+                    <h3>JavaScript, Axios, </h3>
+                </li>
+
+                <li>
+                    <a href="/portfolio/spacewalkers.html">
+                        <img src="/assets/projects/SpaceWalkers-large.jpg" alt="Space Walkers">
+                    </a>
+                    <h3>Responsive, LESS, CSS,HTML</h3>
+                </li> 
+
+
+<!-- 
+                <li>
+                    <a href="">
+                        <img src="" alt="">
+                    </a>
+                    <h3></h3>
+                </li> 
+-->
+
+            </ul>
         </div>
 
     </main>
