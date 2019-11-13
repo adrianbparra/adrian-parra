@@ -114,7 +114,8 @@ a img {
 body {
   font-family: 'PT Sans Narrow', sans-serif;
   box-sizing: border-box;
-  background: #8a3232;
+  background: #aa4444;
+  color: white;
 }
 ul,
 ol {
@@ -122,6 +123,7 @@ ol {
 }
 a {
   text-decoration: none;
+  color: white;
 }
 .banner {
   display: flex;
@@ -132,7 +134,7 @@ a {
   padding: 18px;
   margin: 0 auto;
   max-width: 1080px;
-  background: #8a3232;
+  background: #aa4444;
 }
 .banner .logo {
   display: flex;
@@ -164,4 +166,28 @@ a {
 }
 .banner .menu .menu-item:hover {
   color: #bfbfbf;
+}
+.content-home .intro {
+  height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content-home .intro h1 {
+  font-size: 3.6rem;
+}
+.content-home .intro h4 {
+  margin-top: -16px;
+}
+.content-home .intro p {
+  font-size: 1.2rem;
+}
+.content-home .intro .project-link {
+  position: absolute;
+  text-align: center;
+  bottom: 20px;
+}
+.content-home .intro .project-link h3 {
+  text-transform: uppercase;
 }
