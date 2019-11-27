@@ -168,20 +168,36 @@ a {
   color: #bfbfbf;
 }
 .content-home .intro {
-  height: 92vh;
+  height: 30vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+}
+@media (min-width: 720px) {
+  .content-home .intro {
+    height: 60vh;
+  }
+}
+@media (min-width: 1024px) {
+  .content-home .intro {
+    height: 90vh;
+  }
 }
 .content-home .intro h1 {
-  font-size: 3.6rem;
+  font-size: 2.5rem;
 }
-.content-home .intro h4 {
-  margin-top: -16px;
+@media (min-width: 1024px) {
+  .content-home .intro h1 {
+    font-size: 3.6rem;
+  }
 }
-.content-home .intro p {
-  font-size: 1.2rem;
+@media (min-width: 1024px) {
+  .content-home .intro p {
+    font-size: 2.2rem;
+  }
 }
 .content-home .intro .project-link {
   position: absolute;
@@ -190,4 +206,69 @@ a {
 }
 .content-home .intro .project-link h3 {
   text-transform: uppercase;
+}
+.content-home .portfolio h2 {
+  position: absolute !important;
+}
+.content-home .portfolio .projects {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.content-home .portfolio .projects li {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  word-break: break-word;
+}
+@media (min-width: 575px) {
+  .content-home .portfolio .projects li {
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .content-home .portfolio .projects li {
+    width: 33.3%;
+  }
+}
+.content-home .portfolio .projects li a {
+  display: block;
+  position: relative;
+  transform: translateZ(0);
+  text-align: center;
+  overflow: hidden;
+}
+.content-home .portfolio .projects li a:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 70.5%;
+}
+.content-home .portfolio .projects li a img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  max-width: 100%;
+  transition: 0.3s transform;
+  transform: translateX(-50%) translateY(-50%) translateZ(0);
+}
+.content-home .portfolio .projects li h3 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1em;
+  color: white;
+  line-height: 1.4;
+  background: rgba(0, 0, 0, 0.7);
+  transform: translateY(100%) translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.content-home .portfolio .projects li:hover h3 {
+  transform: translateY(0);
+}
+.content-home .portfolio .projects li:hover img {
+  transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.1);
 }

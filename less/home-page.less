@@ -1,20 +1,30 @@
 .content-home{
     .intro{
-        height: (100vh - 8px);
+        height: 30vh;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        position: relative;
+
+        @media @tablet-large {
+            height: 60vh;
+        }
+        @media @desktop{
+            height: 90vh;
+        }
 
         h1{
-            font-size: 3.6rem;
-        }
-        h4{
-            margin-top: -16px;
-
+            font-size: 2.5rem;
+            @media @desktop{
+                font-size: 3.6rem;
+            }
         }
         p{
-            font-size: 1.2rem;
+            @media @desktop{
+                font-size: 2.2rem;
+            }
         }
 
         .project-link{
@@ -27,5 +37,103 @@
         }
 
     }
+
+    .portfolio {
+        h2{
+            position: absolute !important;
+        }
+
+        .projects {
+            width: 100%;
+            display: flex;
+            // flex-direction: column;
+            flex-wrap: wrap;
+            li{
+                width: 100%;
+                overflow: hidden;
+                position: relative;
+                word-break: break-word;
+                // min-width: 380px;
+                @media @tablet {
+                   width: 50%;
+                }
+                @media @desktop {
+                    width: 33.3%;
+                }
+                
+                a{
+                    display:block;
+                    position: relative;
+                    // min-height: 270px;
+                    transform: translateZ(0);
+                    text-align: center;
+                    overflow: hidden;
+
+                    &:before{
+                        display: block;
+                        content: "";
+                        width: 100%;
+                        padding-top: 70.5%;
+                    }
+                    img{
+                        // position: absolute;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        display: block;
+                        // max-width: 90%;
+                        max-width: 100%;
+                        // overflow: hidden;
+                        transition: .3s transform;
+                        transform: translateX(-50%) translateY(-50%) translateZ(0);
+                        
+                    }
+                    
+                }
+                h3{
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    padding: 1em;
+                    color: white;
+                    line-height: 1.4;
+                    background: rgba(0, 0, 0, 0.7);
+                    transform: translateY(100%) translateZ(0);
+                    transition-duration: 0.3s;
+                    transition-property: transform;
+                }
+                &:hover{
+                    h3{
+                        transform: translateY(0);
+                    }
+                    img{
+                        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.1);
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+
+.projects li{
+    
+
+    // a {
+    //     display:block;
+    //     position: relative;
+    //     min-height: 270px;
+    //     text-align: center;
+    //     img{
+    //         position: absolute;
+    //         top: 50%;
+    //         left: 50%;
+    //         display: block;
+    //         max-width: 110%;
+    //     }
+    // }
 
 }

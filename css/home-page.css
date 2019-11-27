@@ -1,0 +1,30 @@
+.content-home .intro {
+  height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content-home .intro h1 {
+  font-size: 3.6rem;
+}
+.content-home .intro h4 {
+  margin-top: -16px;
+}
+.content-home .intro p {
+  font-size: 1.2rem;
+}
+.content-home .intro .project-link {
+  position: absolute;
+  text-align: center;
+  bottom: 20px;
+}
+.content-home .intro .project-link h3 {
+  text-transform: uppercase;
+}
+.content-home .portfolio .projects {
+  width: 100%;
+}
+.projects li {
+  overflow: hidden;
+}
